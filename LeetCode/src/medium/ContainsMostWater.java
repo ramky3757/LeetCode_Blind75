@@ -8,6 +8,48 @@ public class ContainsMostWater {
 		int[] height = {1,8,6,2,5,4,8,3,7};
 		
 		System.out.println(c.maxArea(height));
+		c.areas(height);
+		c.area(height);
+	}
+	
+	
+	//O(n2) solution
+	public void area(int[] height) {
+		int maxArea = 0;
+		for(int i= 0; i<height.length; i++) {
+		
+			for(int j = i+1; j<height.length; j++) {
+				
+				int min = Math.min(height[i], height[j]);
+				maxArea = Math.max(maxArea, min* j-i); 
+				
+			}
+			
+		}
+		
+		System.out.println(maxArea);
+	}
+	
+	//O(logn) solution
+	public void areas(int[] height) {
+		
+		int maxArea = 0;
+		int l = 0, r = height.length -1;
+		
+		while(l<r) {
+			
+			int min = Math.min(height[l], height[r]);
+			maxArea = Math.max(maxArea, min * r - l);
+			
+			if(height[l] < height[r]) {
+				l++;
+			} else
+				r --;
+			
+		}
+		
+		System.out.println(maxArea);
+		
 	}
 	
 	

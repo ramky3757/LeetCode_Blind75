@@ -7,7 +7,7 @@ public class FindMinRotatedSortedArray {
 		int[] nums = {3,4,5,1,2};
 		FindMinRotatedSortedArray m = new FindMinRotatedSortedArray();
 		System.out.println(m.findMin(nums));
-
+		
 	}
 	
 	public int findMin(int[] nums) {

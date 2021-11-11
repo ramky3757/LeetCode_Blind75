@@ -37,7 +37,7 @@ public class singleNonDuplicate {
 				
 				if(nums[mid] == nums[mid-1]) {
 					right = mid-2;
-				} else {
+				} else {	
 					left = mid+2;					
 				}
 			} else {

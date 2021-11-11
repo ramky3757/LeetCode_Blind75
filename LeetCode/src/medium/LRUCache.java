@@ -99,6 +99,28 @@ class LRU{
 	}
 }
 
+/*
+ *  setCache(int key, int val){
+ * 
+ * 
+ * }
+ * 
+ * public void addTohead(Node){
+ * 	node.pre = head;
+ * node.next = head.next;
+ * node.next.pre = node;
+ * head.next = node;
+ * 
+ * }
+ * 
+ * public void deleteNode(Node){
+ * 
+ * 
+ * }
+ */
+
+
+
 
 class Node{
 	
