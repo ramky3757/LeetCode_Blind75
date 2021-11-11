@@ -44,9 +44,7 @@ public class MaxSubArray {
 	        }
 	        
 	        if(finalMax<=0 && nums.length > 1){
-	            
 	            finalMax = negative_chk;
-	            
 	        }
 	        
 	        return finalMax;

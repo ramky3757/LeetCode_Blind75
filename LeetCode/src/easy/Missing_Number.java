@@ -19,8 +19,8 @@ public class Missing_Number {
             sum+= nums[i];                
         }
         
-        return total_sum-sum;
         
+        return total_sum-sum;
     }
 	
 	

@@ -14,7 +14,7 @@ package easy;
 public class PalindromeNumber {
 
 	public static void main(String[] args) {		
-		System.out.println(isPalindrome(-121));
+		System.out.println(isPalindrome(121));
 		
 		System.out.println(isPalin(-121));
 	}
@@ -26,9 +26,8 @@ public class PalindromeNumber {
 	        if(x<0){
 	            return false;
 	        }
-	        
-	        int rev = reverse(x);
-	        return rev == x;
+	       
+	        return x == reverse(x);
 	    }
 	    
 	    public static int reverse(int n) {
@@ -37,6 +36,8 @@ public class PalindromeNumber {
 	            res = res*10 + n%10;
 	            n /= 10;
 	        }
+	        
+	        System.out.println(res);
 	        return res;
 	    }
 	    

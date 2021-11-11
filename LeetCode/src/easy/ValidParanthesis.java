@@ -1,6 +1,5 @@
 package easy;
 
-import java.util.HashMap;
 import java.util.Stack;
 
 public class ValidParanthesis {
@@ -32,8 +31,6 @@ public class ValidParanthesis {
 		
 		return stack.isEmpty();
 	}
-	
-	
 
 	private boolean matches(char openTerm, char closeTerm) {
 		
